@@ -1,0 +1,463 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    padding: 0; /* Elimina padding del contenedor */
+}
+
+header{
+    height: 65px;
+    background-color: #000000e5;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    animation: colorChange 4s ease-in-out infinite;
+}
+.cara{
+    
+    height: 350px; /* Altura fija */
+    width: 70%; /* Ancho relativo */
+    background-color: #003366; /* Fondo oscuro */
+    text-align: center; /* Centrar el texto */
+    margin: 0 auto; /* Centrar el contenedor horizontalmente */
+    border-radius: 20px; /* Bordes redondeados */
+    display: flex; /* Para centrar contenido verticalmente */
+    justify-content: center; /* Centrar contenido horizontalmente */
+    align-items: center; /* Centrar contenido verticalmente */
+    
+
+}
+.uno{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background: linear-gradient(to right, #003366, #000000);
+    color: rgb(228, 29, 29);
+    height: calc(100vh - 65px); /* Ajusta la altura si es necesario */
+    
+    
+}
+.caja-central{
+    margin-top: 10%;
+    width: 90%;
+    max-width: 1200px; 
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    overflow: hidden;
+    height: 70%;
+    color: white;
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente linea si no caben */
+    
+}
+.caja-cara{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    background: linear-gradient(to right, #008080, #333333);
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente linea si no caben */
+
+}
+.caja-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    background: linear-gradient(to right, #008080, #333333);
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente linea si no caben */
+    
+}
+
+h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+    font-weight: bold;
+    color:burlywood;
+    margin-top: 40px;
+}
+h1{
+    font-size: 3em; /* Tamaño de la fuente */
+    font-family: 'Roboto', sans-serif; /* Fuente */
+    font-weight: bold; /* Grosor de la fuente */
+    color: #333; /* Color del texto */
+    text-align:center;/* Alinear el texto al centro */
+    top: -40px;
+    position: relative;
+}
+h2{
+    font-size: 4em; /* Tamaño de la fuente */
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold; /* Grosor de la fuente */
+    color: #333; /* Color del texto */
+    text-align:center;/* Alinear el texto al centro */
+    top: -10px;
+    position: relative;
+}
+.dos{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background: linear-gradient(to right, #003366, #000000);
+    color: rgb(228, 29, 29);
+    height: calc(100vh - 65px); /* Ajusta la altura si es necesario */
+}
+
+.tres{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background: linear-gradient(to right, #003366, #000000);
+    color: #333;
+    height: calc(100vh - 65px); /* Ajusta la altura si es necesario */
+}
+.aptitudes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px; /* Espacio superior */
+    gap: 55px;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    gap:25px;
+}
+
+.tech {
+    width: 80px; /* Tamaño de los iconos */
+    height: 80px; /* Tamaño de los iconos */
+    transition: transform 0.3s ease;
+}
+
+/* Animación al pasar el mouse */
+.tech-list:hover {
+    transform: scale(1.1); /* Aumenta el tamaño */
+    opacity: 0.8; /* Cambio de opacidad */
+}
+
+.tech-list:hover .tech {
+    transform: rotate(360deg); /* Rota el icono */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tech-list {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.tech-list:nth-child(1) {
+    animation-delay: 0.1s; /* Retraso para la animación */
+}
+
+.tech-list:nth-child(2) {
+    animation-delay: 0.2s; /* Retraso para la animación */
+}
+
+.tech-list:nth-child(3) {
+    animation-delay: 0.3s; /* Retraso para la animación */
+}
+
+.tech-list:nth-child(4) {
+    animation-delay: 0.4s; /* Retraso para la animación */
+}
+
+.cuatro{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background: linear-gradient(to right, #003366, #000000);
+    color:white;
+    height: calc(100vh - 65px); /* Ajusta la altura si es necesario */
+    
+    
+}
+.cajacuatro {
+        max-width: 1200px; /* Ajusta este valor para hacer el contenedor más ancho */
+        width: 100%;
+        padding: 95px;
+}
+    
+.caja-presentacioncuatro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+}
+
+.proyectos {
+    width: 80%; /* Ajusta el ancho del contenedor */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 40px; /* Relleno interno del contenedor */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+    display: flex;
+    justify-content: center; /* Centra las tarjetas */
+    gap: 75px; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea si no caben */
+    text-align: center;
+    margin-top: -250px;
+}
+.card{
+    width: 300px; /* Ajusta el ancho de las tarjetas */
+    background: white; /* Color de fondo de las tarjetas */
+    border: 1px solid darkolivegreen; /* Borde de las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra de las tarjetas */
+    padding: 20px; /* Espaciado interno */
+    opacity: 0; /* Inicia invisible */
+    transform: translateY(20px); /* Desplazamiento hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transición suave */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente linea si no caben */
+}
+.card.visible {
+    opacity: 1; /* Se vuelve visible */
+    transform: translateY(0); /* Vuelve a la posicion original */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card img{
+    width: 100%;
+}
+.card a, footer a {
+    color: white;
+}
+.cinco{
+
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background: linear-gradient(to right, #003366, #000000);
+    color: rgb(228, 29, 29);
+    height: calc(100vh - 65px); /* Ajusta la altura si es necesario */
+    text-align: center;
+}
+.a .card{
+    color: #008080;
+}
+.a footer{
+    color: white;
+}
+
+.contacto {
+    text-align: center; /* Centra todo el contenido dentro del footer */
+    padding: 40px 0; /* mas espacio arriba y abajo */
+    position: relative;
+}
+
+.iconos{
+    display: flex; /* Cambia a flexbox para alinear horizontalmente */
+    justify-content: center; /* Centra los iconos horizontalmente */
+        width: 80%; /* Ajusta el ancho del contenedor como un porcentaje del contenedor padre */
+        max-width: 800px; /* Ancho maximo del contenedor */
+        margin: 0; /* Elimina margenes automaticos */
+        padding: 20px; /* Agrega relleno dentro del contenedor */
+        box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+        text-align: center;
+        gap: 90px;
+        text-align: center;
+        justify-content: center;
+    
+}
+
+.red-social {
+
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; 
+    width: 100px; /* Ancho */
+    height: 100px; /* Altura */
+    border: 2px solid darkcyan; /* Ejemplo de borde negro */
+    padding: 10px; /* Espacio alrededor del icono */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transicion para la animacion*/
+    object-fit: contain; /* Ajusta el tamaño del icono */
+ 
+    
+}
+
+.red-social:hover {
+    transform: scale(1.1); 
+}
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background: linear-gradient(to right, #003366, #000000);
+    color: rgb(228, 29, 29);
+    margin-top: -40px;
+}
+
+.formulario {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: -50px; /* Ajusta este valor para bajar el formulario */
+    margin-bottom: -100px;
+    animation: slideInLeft 0.5s ease forwards;
+    
+}
+
+
+h4 {
+    font-size: 3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+   
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 350px;
+ 
+    
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.formulario button {
+    background-color: burlywood; 
+    color: #003366; 
+    padding: 30px 20px; 
+    border: none; 
+    cursor: pointer; 
+    align-self: center;
+}
+.contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 65px);
+    background: linear-gradient(to right, #003366, #000000);
+    color: rgb(228, 29, 29);
+    align-items: center;
+    padding: 40px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    
+}
+
+.iconos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espacio entre los iconos */
+    margin-top: 0px;
+}
+
+
+
+
+.descargar-cv {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 35px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.descargar-cv:hover {
+    transform: translateX(10px);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-color: #007bff;
+    }
+    50% {
+        background-color: #6f42c1;
+    }
+    100% {
+        background-color: #28a745;
+    }
+}
+
+.navbar {
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
+    position: relative;
+    text-align: left;
+    animation: gradientAnimation 5s ease infinite;
+    background: linear-gradient(90deg, #007bff, #6f42c1, #28a745);
+    background-size: 300% 100%;
+    transition: background-position 0.5s ease;
+    z-index: 1000;
+}
+.navbar:hover {
+    background-position: 100% 0;
+}
+.navbar-brand,
+.nav-link {
+    font-size: 1.75rem; /* Ajusta este valor según tu preferencia */
+}
+
+.navbar {
+    padding: 1rem 0; /* Aumenta el padding del navbar si lo deseas */
+}
+.presentacion {
+        font-family: 'Lora', sans-serif; /* Cambia a la fuente elegida */
+        font-size: 1.5rem; /* Ajusta el tamaño de la fuente */
+        line-height: 1.3; /* Mejora el espaciado entre líneas */
+        color:black /* Cambia el color si es necesario */
+}
+
+
+
+
+
+
+
+
+
